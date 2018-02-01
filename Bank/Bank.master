@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Bank.master.cs" Inherits="Bank" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Bank Application</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="margin-left:108px;margin-right:108px;"><center><h3>Bank Application</h3>
+        <p><img src="Images/Bank.jpg" alt="No Image Found" 
+                style="height: 94px; width: 149px" />&nbsp;</p>
+    <div style="margin-left:108px;margin-right:108px; background-color: #FF5050; color: #FFFFFF;">
+    <b>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/New_Bank.aspx">New Bank</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/New_Branch.aspx">New Branch</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/New_Account.aspx">New Account</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink4" runat="server" 
+            NavigateUrl="~/Bank_Wise_Report.aspx">Bank Wise Report</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink5" runat="server" 
+            NavigateUrl="~/Branch_Wise_Report.aspx">Branch Wise Report</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink6" runat="server" 
+            NavigateUrl="~/Check_Balance.aspx">Check Balance</asp:HyperLink>
+    
+    </b></div>
+        </center></div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
